@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto my-5">
+  <section class="container">
     <TitleH1>Mon portfolio</TitleH1>
   </section>
 </template>
