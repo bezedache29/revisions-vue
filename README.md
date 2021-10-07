@@ -5,8 +5,8 @@ Faire un portfolio automatique de ses projets github
 
 ## Etapes
 
-- [ ] Versioner	le	projet	avec	git	ET	le	stocker	sur	GitHub
-- [ ] Créer	son	projet	en	Vue.JS
+- [x] Versioner	le	projet	avec	git	ET	le	stocker	sur	GitHub
+- [x] Créer	son	projet	en	Vue.JS
 - [ ] Avoir	une	page	de	présentation
 - [ ] Avoir	une	page	de	liste	des	projets	présents	sur	github
 - [ ] Avoir	une	page	explicative	par	projet
