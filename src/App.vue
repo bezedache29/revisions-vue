@@ -1,4 +1,4 @@
-<template>
+<template class="bg">
   <NavbarApp />
   <router-view></router-view>
 </template>
@@ -13,3 +13,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .bg {
+    background-color: #FFFAFA;
+  }
+</style>

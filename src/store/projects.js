@@ -18,7 +18,7 @@ const projects = {
       // closeLoaderCards: false
       // https://api.github.com/repos/bezedache29/activit-_git
       apiUrl: 'https://api.github.com',
-      apiKey: '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',
+      apiKey: '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',
       projects: [],
       project: {},
       isHideParent: false
