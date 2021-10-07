@@ -10,9 +10,9 @@ Faire un portfolio automatique de ses projets github
 - [x] Avoir	une	page de	présentation
 - [x] Avoir	une	page de	liste	des	projets	présents	sur	github
 - [x] Avoir	une	page explicative	par	projet
-- [ ] Tout	ce	que	vous voulez	montrer	en	ressortant	tout	ce	que	vous	avez	appris/retenu	
+- [x] Tout	ce	que	vous voulez	montrer	en	ressortant	tout	ce	que	vous	avez	appris/retenu	
 en	Vue.JS
-- [ ] Utiliser	l’API	REST	de	github	(https://docs.github.com/en/rest/overview/resourcesin-the-rest-api#authentication)	OU	l’API	GraphQL	de	github	
+- [x] Utiliser	l’API	REST	de	github	(https://docs.github.com/en/rest/overview/resourcesin-the-rest-api#authentication)	OU	l’API	GraphQL	de	github	
 (https://docs.github.com/en/graphql/overview/about-the-graphql-api)
 - [x] Utiliser	une bibliothèque	de	composants	OU	CSS	(de	préférences	autre	que	
 bootstrap)	+	du	CSS	indépendant	de	la	bibliothèque
@@ -33,3 +33,4 @@ Les	objectifs	1,	3,	4	et	5	sont	optionnels.	La	priorité	est	l’objectif	2	(et	
 - [x] Utilisation de tailwind css (CDN)
 - [x] Installation d'axios
 - [x] Installation de VueX 4
+- [x] Mise ne place de variables d'environnements

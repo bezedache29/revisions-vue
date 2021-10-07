@@ -6,7 +6,7 @@ const projects = {
   state() {
     return {
       apiUrl: 'https://api.github.com',
-      apiKey: process.env.TOKEN_GITHUB,
+      apiKey: process.env.VUE_APP_CLE,
       projects: [],
       project: {},
       isHideParent: false
