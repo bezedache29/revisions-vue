@@ -4,7 +4,9 @@
 
     <div class="cards container mt-5 is-flex is-flex-wrap-wrap is-justify-content-space-evenly">
 
-      <CardApp v-for="(project, index) in getProjects" :key="index" :project="project" />
+      <LoaderApp v-if="load" />
+
+      <CardApp v-else v-for="(project, index) in getProjects" :key="index" :project="project" />
 
     </div>
   </section>
@@ -16,21 +18,28 @@
   import TitleH1 from '../../components/TitleH1/TitleH1.vue'
   import CardApp from '../../components/CardApp/CardApp.vue'
 
+  import LoaderApp from '../../components/Loader/LoaderApp.vue'
+
   import { mapActions, mapGetters, mapState } from 'vuex'
 
   export default {
     name:"projects-app",
     components: {
       TitleH1,
-      CardApp
+      CardApp,
+      LoaderApp
     },
     data() {
       return {
-        
+        load: true
       }
     },
     mounted() {
-      this.searchMyProjects()
+      setTimeout(() => { 
+        this.searchMyProjects()
+        this.load = false
+      }, 500)
+      // this.searchMyProjects()
       this.hideParent(false)
     },
     computed: {
