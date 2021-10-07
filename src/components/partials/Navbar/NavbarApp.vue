@@ -35,7 +35,7 @@
         return { name: 'home-app' }
       },
       portfolio() {
-        return { name: 'portfolio' }
+        return { name: 'projects' }
       }
     }
   }

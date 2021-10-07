@@ -2,6 +2,7 @@
   <section class="container">
     <TitleH1>Mon portfolio</TitleH1>
   </section>
+  <router-view></router-view>
 </template>
 
 <script>
