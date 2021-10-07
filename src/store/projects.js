@@ -6,6 +6,7 @@ const projects = {
   state() {
     return {
       apiUrl: 'https://api.github.com',
+      apiKey: process.env.TOKEN_GITHUB,
       projects: [],
       project: {},
       isHideParent: false
@@ -72,7 +73,7 @@ const projects = {
       }
 
       axios.defaults.headers.common = {
-        "Authorization": `token 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`,
+        "Authorization": `token ${context.state.apiKey}`,
       }
 
       const response = await axios({
