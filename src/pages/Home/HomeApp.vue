@@ -1,12 +1,18 @@
 <template>
   <section class="container mx-auto my-5">
-    <h1 class="text-center text-4xl font-bold border p-2 rounded-md bg-green-400 text-white">Ma page de présentation</h1>
+    <TitleH1>Qui suis-je ?</TitleH1>
   </section>
 </template>
 
 <script>
+
+  import TitleH1 from '../../components/TitleH1/TitleH1.vue'
+
   export default {
     name:"home-app",
+    components: {
+      TitleH1,
+    },
     data() {
       return {
         

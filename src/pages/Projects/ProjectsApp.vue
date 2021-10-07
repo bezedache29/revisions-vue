@@ -1,12 +1,18 @@
 <template>
-  <div>
-    <h1>Mon portfolio</h1>
-  </div>
+  <section class="container mx-auto my-5">
+    <TitleH1>Mon portfolio</TitleH1>
+  </section>
 </template>
 
 <script>
+
+  import TitleH1 from '../../components/TitleH1/TitleH1.vue'
+
   export default {
     name:"projects-app",
+    components: {
+      TitleH1
+    },
     data() {
       return {
         

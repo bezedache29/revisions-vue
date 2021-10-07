@@ -15,7 +15,7 @@
 					</div>
 					<!-- Primary Navbar items -->
 					<div class="hidden md:flex items-center space-x-1">
-            <router-link :to="home" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">
+            <router-link :to="home" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">
               Accueil
             </router-link>
             <router-link :to="portfolio" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">
