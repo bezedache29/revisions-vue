@@ -32,3 +32,4 @@ Les	objectifs	1,	3,	4	et	5	sont	optionnels.	La	priorité	est	l’objectif	2	(et	
 - [x] Installation de vue router + configuration du router
 - [x] Utilisation de tailwind css (CDN)
 - [x] Installation d'axios
+- [x] Installation de VueX 4
