@@ -1,6 +1,6 @@
 <template>
   <!-- Start card -->
-  <div class="card m-4" @click="goToDetailProject(project.id)">
+  <div class="card m-4" @click="goToDetailProject({name: project.name, id: project.id})">
     <div class="card-content">
       <div class="media">
         <div class="media-left">
@@ -24,6 +24,9 @@
 </template>
 
 <script>
+
+  import { mapActions } from 'vuex'
+
   export default {
     name:"card-app",
     props: {
@@ -34,6 +37,11 @@
         
       }
     },
+    methods: {
+      ...mapActions('projects', [
+        'goToDetailProject'
+      ])
+    }
   }
 </script>
 

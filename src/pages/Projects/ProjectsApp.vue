@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" v-if="!isHideParent">
     <TitleH1>Mon portfolio</TitleH1>
 
     <div class="cards container mt-5 is-flex is-flex-wrap-wrap is-justify-content-space-evenly">
@@ -16,7 +16,7 @@
   import TitleH1 from '../../components/TitleH1/TitleH1.vue'
   import CardApp from '../../components/CardApp/CardApp.vue'
 
-  import { mapActions, mapGetters } from 'vuex'
+  import { mapActions, mapGetters, mapState } from 'vuex'
 
   export default {
     name:"projects-app",
@@ -31,17 +31,22 @@
     },
     mounted() {
       this.searchMyProjects()
+      this.hideParent(false)
     },
     computed: {
       ...mapGetters('projects', [
         'getProjects'
+      ]),
+      ...mapState('projects', [
+        'isHideParent'
       ])
     },
     methods: {
       ...mapActions('projects', [
-        'searchMyProjects'
+        'searchMyProjects',
+        'hideParent'
       ])
-    }
+    },
   }
 </script>
 

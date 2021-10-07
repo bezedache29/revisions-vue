@@ -1,5 +1,5 @@
 import axios from 'axios'
-// import router from '../router'
+import router from '../router'
 
 const projects = {
   namespaced: true,
@@ -16,9 +16,12 @@ const projects = {
       // createDeck: false,
       // deckMessage: false,
       // closeLoaderCards: false
-      apiUrl: 'https://api.github.com/user/repos',
-      apiKey: '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',
-      projects: []
+      // https://api.github.com/repos/bezedache29/activit-_git
+      apiUrl: 'https://api.github.com',
+      apiKey: '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',
+      projects: [],
+      project: {},
+      isHideParent: false
     }
   },
   getters: {
@@ -27,6 +30,9 @@ const projects = {
     // },
     getProjects(state) {
       return state.projects
+    },
+    getProject(state) {
+      return state.project
     }
   },
   mutations: {
@@ -35,6 +41,12 @@ const projects = {
     // },
     UPDATE_PROJECTS(state, payload) {
       state.projects = payload
+    },
+    UPDATE_PROJECT(state, payload) {
+      state.project = payload
+    },
+    HIDE_PARENT(state, payload) {
+      state.isHideParent = payload
     }
   },
   actions: {
@@ -43,7 +55,7 @@ const projects = {
     async searchMyProjects(context) {
       try {
 
-        const response = await context.dispatch('getRequestAxios', '')
+        const response = await context.dispatch('getRequestAxios', '/user/repos')
         console.log(response.data)
         context.commit('UPDATE_PROJECTS', response.data)
 
@@ -51,6 +63,22 @@ const projects = {
 
         console.log(e)
 
+      }
+    },
+
+    // Permet de récupérer un seul projet
+    async goToDetailProject(context, payload) {
+      try {
+        const response = await axios.get(`${context.state.apiUrl}/repos/bezedache29/${payload.name}`)
+
+        console.log(response.data)
+        context.commit('UPDATE_PROJECT', response.data)
+
+        const id = payload.id
+
+        router.push({ name: 'project', params: { id }} )
+      } catch (e) {
+        console.log(e)
       }
     },
 
@@ -75,7 +103,13 @@ const projects = {
       return response
     },
 
+    // Permet de cacher la page parent lorsque d'un details de projet est demandé
+    hideParent(context, payload) {
+      context.commit('HIDE_PARENT', payload)
+    },
   }
+
+  
   // actions: {
 
   //   // Permet de rechercher tous les decks
