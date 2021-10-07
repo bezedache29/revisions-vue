@@ -6,7 +6,7 @@ const projects = {
   state() {
     return {
       apiUrl: 'https://api.github.com',
-      apiKey: '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',
+      apiKey: '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',
       projects: [],
       project: {},
       isHideParent: false
