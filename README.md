@@ -25,6 +25,3 @@ présentation	visuelle	du	projet.
 6	points	bonus	à	obtenir	pour	le	devoir	de	votre	choix	(dans	la	limite	de	mes	cours	(git,	
 Vue.Js,	Node	et	React)
 Les	objectifs	1,	3,	4	et	5	sont	optionnels.	La	priorité	est	l’objectif	2	(et	ses	sous	objectifs)
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
