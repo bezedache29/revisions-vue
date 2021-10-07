@@ -61,13 +61,6 @@
   </section>
 </template>
 
-
-HTML 5
-CSS 3
-PHP 7/8
-JS ES6 à ES9
-TypeScript 4
-
 <script>
 
   import TitleH1 from '../../components/TitleH1/TitleH1.vue'
