@@ -7,14 +7,14 @@ Faire un portfolio automatique de ses projets github
 
 - [x] Versioner	le	projet	avec	git	ET	le	stocker	sur	GitHub
 - [x] Créer	son	projet	en	Vue.JS
-- [ ] Avoir	une	page	de	présentation
-- [ ] Avoir	une	page	de	liste	des	projets	présents	sur	github
-- [ ] Avoir	une	page	explicative	par	projet
-- [ ] Tout	ce	que	vous	voulez	montrer	en	ressortant	tout	ce	que	vous	avez	appris/retenu	
+- [ ] Avoir	une	page de	présentation
+- [ ] Avoir	une	page de	liste	des	projets	présents	sur	github
+- [ ] Avoir	une	page explicative	par	projet
+- [ ] Tout	ce	que	vous voulez	montrer	en	ressortant	tout	ce	que	vous	avez	appris/retenu	
 en	Vue.JS
 - [ ] Utiliser	l’API	REST	de	github	(https://docs.github.com/en/rest/overview/resourcesin-the-rest-api#authentication)	OU	l’API	GraphQL	de	github	
 (https://docs.github.com/en/graphql/overview/about-the-graphql-api)
-- [ ] Utiliser	une bibliothèque	de	composants	OU	CSS	(de	préférences	autre	que	
+- [x] Utiliser	une bibliothèque	de	composants	OU	CSS	(de	préférences	autre	que	
 bootstrap)	+	du	CSS	indépendant	de	la	bibliothèque
 - [ ] Mettre	en	ligne	avec	clever	cloud	ou	github	pages
 Obtention	d’un	point	bonus	par	objectif	réalisé.	Un	point	bonus	supplémentaire	pour	la	
@@ -29,6 +29,6 @@ Les	objectifs	1,	3,	4	et	5	sont	optionnels.	La	priorité	est	l’objectif	2	(et	
 ### Tasks
 
 - [x] Installation de vue.js 3
-- [ ] Installation de vue router + configuration du router
-- [ ] Utilisation de tailwind css
+- [x] Installation de vue router + configuration du router
+- [x] Utilisation de tailwind css (CDN)
 - [ ] Installation d'axios
